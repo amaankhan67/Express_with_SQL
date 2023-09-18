@@ -1,8 +1,8 @@
-const Sequelize=require('sequelize');
+const Sequelize = require('sequelize');
 
-const sequelize=require('../util/database');
+const sequelize = require('../util/database');
 
-const Product=sequelize.define('product',{
+const Product = sequelize.define('product', {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -18,9 +18,9 @@ const Product=sequelize.define('product',{
     type: Sequelize.STRING,
     allowNull: false
   },
-  description : {
+  description: {
     type: Sequelize.STRING,
-    allowNull:false
+    allowNull: false
   }
 });
 
